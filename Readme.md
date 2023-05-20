@@ -24,9 +24,8 @@ If there is no docker/docker-compose on the server, install it. Instructions htt
 ### usage example
 Response at the first request
 
-
-<img height="558" src="D:\projects\questions\images\first request.JPG" title="first request" width="714"/>
+![first request](./images/first_request.jpg)
 
 Response for the second request returns the last question received from the previous request
 
-<img height="633" src="D:\projects\questions\images\second request.JPG" title="second request" width="709"/>
+![second request](./images/second_request.jpg)
