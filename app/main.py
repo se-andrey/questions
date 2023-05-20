@@ -1,8 +1,9 @@
-import requests
-
-from fastapi import FastAPI, HTTPException
 from datetime import datetime, timedelta, timezone
+
+import requests
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+
 from .db import Question, SessionLocal
 from .startup import create_table
 

@@ -1,14 +1,12 @@
-import sqlalchemy
-from sqlalchemy import Column, Integer, Text
-from sqlalchemy import DateTime
-from sqlalchemy.orm import sessionmaker, declarative_base
-
 from datetime import datetime
 from typing import Optional
+
+import sqlalchemy
 from pydantic import BaseModel
+from sqlalchemy import Column, DateTime, Integer, Text
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 from .config import settings
-
 
 Base = declarative_base()
 metadata = sqlalchemy.MetaData()

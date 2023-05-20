@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine, inspect
+
 from .config import settings
 from .db import Question
 
