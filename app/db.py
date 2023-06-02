@@ -13,22 +13,22 @@ metadata = sqlalchemy.MetaData()
 
 
 class QuestionCreate(BaseModel):
-    id_question: int
+    question_id: int
     question_text: str
-    answer_text: str
-    created_date: Optional[datetime] = None
-    date_question: Optional[datetime] = None
+    question_text_answer: str
+    question_date_created: Optional[datetime] = None
+    question_date: Optional[datetime] = None
 
 
 class Question(Base):
     __tablename__ = "questions"
 
     id = Column(Integer, primary_key=True)
-    id_question = Column(Integer)
+    question_id = Column(Integer)
     question_text = Column(Text)
-    answer_text = Column(Text)
-    created_date = Column(DateTime)
-    date_question = Column(DateTime)
+    question_text_answer = Column(Text)
+    question_date_created = Column(DateTime)
+    question_date = Column(DateTime)
 
 
 engine = sqlalchemy.create_engine(settings.db_url)

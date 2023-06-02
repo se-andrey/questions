@@ -24,8 +24,8 @@ If there is no docker/docker-compose on the server, install it. Instructions htt
 ### usage example
 Response at the first request
 
-![first request](./images/first_request.jpg)
+![first request](./images/first.jpg)
 
 Response for the second request returns the last question received from the previous request
 
-![second request](./images/second_request.jpg)
+![second request](./images/second.jpg)
